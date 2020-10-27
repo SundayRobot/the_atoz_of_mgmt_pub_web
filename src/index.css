@@ -1,13 +1,847 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital,wght@1,500;1,600&family=Source+Sans+Pro:wght@200;300&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+/*for all pages*/
+/*header*/
+header{
+  font-family: 'Times New Roman', Times, serif;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+
+  z-index: 10;
+  box-shadow: 3px 2px 10px rgba(0,0,0,.1);
+  
+}
+
+.theimage{
+  background-color: red;
+  width: 20%;
+}
+
+#items_inside_header_holder{
+  width: 90%;
+  margin-left: 5%;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-align: left;
+  width: 34%;
+  display: inline-block;
+}
+
+.theh1{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  text-align: left;
+   width: 30%;
+   font-style: italic;
+}
+
+#main-h1{
+  margin-left: 0px;
+  color: #212121;
+  
+  height: 200px;
+  font-family: 'Playfair Display', serif;
+}
+
+#thenav{
+  right: 0;
+  top: 10px;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  position: fixed;
+  background-color: #fff;
+}
+
+input, #search, #thenav{
+  display: inline-block;
+}
+
+#input_and_button_holder{
+  margin-left: 10%;
+  padding-left: 10px;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+input{
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  width: 30%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav > a{
+  padding-left: 10px;
+  color: #212121;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#search{
+  text-align: center;
+  width: 70px;
+  display: inline-block;
+  padding: 3px;
+  border: none;
+  background-color: transparent;
+  font-family: 'Source Sans Pro'sans-serif;
+  font-size: .8rem;
+}
+
+#input_and_button_holder #search:hover{
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
+
+nav > a:hover{
+  color: tomato;
+}
+
+#tags_filter_holder{
+  margin-top: 1%;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px 8px 10px;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#tags_filter_holder > button{
+  width: 100px;
+  padding: 5px;
+  border: none;
+  color: #aaa;
+  background-color: transparent;
+  margin-left: 1%;
+  font-family: calibri;
+}
+
+#tags_filter_holder > button:hover{
+  color: tomato;
+  border-bottom: 5px solid tomato;
+  cursor: pointer;
+}
+
+/*styling for hamburger menu that will be visible at smaller screen sizes*/
+.top-nav-div{
+  display: none;
+  width: 100%;
+  margin-left: 40%;
+  z-index: 9;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+#openMenu-icon{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#x-icon{
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+  position: absolute;
+  margin-top: -10px;
+  height: 50px;
+  width: 50px; 
+ background-color: #fff;
+}
+
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+#homepage-ul{
+  display: inline-block;
+  background-color: #fff;
+}
+  
+#homepage-ul a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+#homepage-ul li a:hover{
+  color: tomato;
+}
+
+/*end of header styling*/
+
+/*about styling*/
+.testing123{
+  height: 300px;
+  background-color: red;
+}
+
+.aboutpage{
+  width: 90%;
+  margin-left: 0;
+  padding: 10px;
+}
+
+.aboutpage > p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+/*footer styling*/
+footer{
+  text-align: center;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #191919;
+  z-index: 150;
+  color: #fafafa;
+  font-family: 'Playfair Display', serif;
+}
+
+footer > div > p{
+  display: inline-block;
+  padding-left: 8px;
+  background-color: #191919;
+}
+
+#thefooter > a{
+  letter-spacing: 1px;
+  font-size: .75rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 18px;
+  background-color: #191919;
+}
+
+/*main body styling*/
+#holds-everything{
+  position: relative;
+  padding-top: 100px;
+  color: #212121;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  padding-bottom: 100px
+}
+
+/*homepage styling*/
+#holder{
+  width: 90%;
+  top: 120px;
+  margin-left: 10%;
+}
+
+/*homepage card styling*/
+h2{
+  width: 80%;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.card{
+  vertical-align: top;
+  width: 24%;
+  border: 1px solid #ddd;
+  height:300px;
+  border-radius: 24px;
+  padding: 20px;
+  display: inline-block;
+  margin: 1%;
+}
+
+.card:hover{
+  background-color: #fafafa;
+}
+
+.dictionary-word{
+  height: 110px;
+  color: tomato;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.readmoreholder{
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.readmoreholder:hover{
+  color: tomato;
+  cursor: pointer;
+}
+
+.readmore{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .90rem;
+  font-style: italic;
+  display: inline-block;
+}
+
+img{
+  width: 10%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*dictionary page*/
+/*dictionary header*/
+#div-as-nav-in-header{
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+
+.removenav{
+ opacity: 0;  
+ display: none;
+ background-color: none;
+}
+
+.shownav{
+  opacity: 1;
+}
+
+.li-nav-item > a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+li a:hover{
+  background-color: #ddd;
+  width: 100%;
+}
+
+.active{
+  display: block;
+  background-color: #ddd;
+}
+
+/*dictionary main page styling*/
+#div-as-nav-in-header{
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+
+.container-for-side-letter-and-entry-count{
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.side-letter p{
+  padding-top: 10px;
+  font-size: 10rem;
+  font-style: italic;
+  color: #212121;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase
+}
+
+.entry-count{
+  padding-left: 0;
+  color: #555;
+  display: inline-block;
+  width: 90%;
+  margin-right: 10%;
+  padding-bottom: 10px;
+}
+
+.entry-progress{
+  display: block;
+  height: 1px;
+  background-color: tomato;
+  width: 100%;
+}
+
+section{
+  width: 80%;
+  padding: 40px;
+  margin-left: 20%;
+  /*background-color: green;*/
+  display: block;
+  margin-top: .5%;
+  word-wrap: break-word;
+
+}
+
+.word-card{
+  width: 70%;
+  padding: 20px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: 200;
+/*   color: #212121; */
+  color: tomato;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+}
+
+.describer{
+  font-style: italic;
+  color: #777;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-text{
+  padding-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .4px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #444;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.word-card > div span{
+  display: inline-block;
+  padding-left: 5px;
+}
+
+ .word-card > div p{
+  padding: 20px 20px 20px 0;
+  font-weight: 300;
+  font-size: .95rem;
+  color: #313131;
+  letter-spacing: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+
+/*search results*/
+.dictionaryResult{
+  width: 100%;
+  margin-left: 0;
+  padding-top: 100px;
+}
+
+.innerResult{
+  width: 70%;
+  margin-left: 15%;
+  padding: 100px 0;
+}
+
+.clickContainer{
+  padding-top: 50px;
+  width: 90%;
+}
+
+.clickContainer-p{
+  font-size: .9rem;
+  display: inline-block;
+  width: 15%;
+}
+
+.clickContainer-img{
+  display: inline-block;
+  width: 10%;
+}
+/*end of dictionary styling*/
+
+/*posts overview styling*/
+h4{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+.postcard{
+  vertical-align: top;
+  width: 28%;
+  border: 1px solid #ddd;
+  height: 380px;
+  border-radius: 24px;
+  padding: 20px;
+  display: inline-block;
+  margin: 1%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.post-date{
+  color: #777;
+  font-size: .7rem;
+  font-style: italic;
+}
+
+.post-word{
+  padding-top: 20px;
+  height: 120px;  
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  color: tomato;
+  letter-spacing: 1px;
+
+}
+
+/* post detail styling  */
+
+.posttitle{
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+}
+
+.postdate{
+  font-style: italic;
+  color: #777;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .8rem;
+  padding-bottom: 10px;
+}
+
+
+.postIntroText{
+  font-weight: 400;
+  color: #313131;
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.postParagraph{
+  padding-top: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .4px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #444;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.thepostHeading{
+  font-size: 2.6rem;
+  font-weight: 200;
+/*   color: #212121; */
+  color: tomato;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+}
+
+.gobackbutton{
+  transform: rotateY(180deg);
+  width: 8%;
+} 
+
+.goback:hover{
+  color: tomato;
+}
+
+.post-top{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  color: tomato;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+.postdetail, .resourcedetail{
+  padding-top: 50px;
+  width: 90%;
+}
+
+.h4-post-detail, .resource-post-detail{
+  font-size: 3rem;
+  padding-bottom: 10px ;
+}
+
+.post-detail-text{
+  padding-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .4px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #444;
+  line-height: 30px;
+  padding-bottom: 20px
+}
+
+
+.resource-detail-text{
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: .4px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #444;
+  line-height: 32px;
+  padding-bottom: 20px
+}
+
+.spantag{
+  padding-right: 5px;
+}
+
+.goback{
+  padding-top: 10px;
+}
+
+/* resources page styling */
+.resourceTags{
+  padding-top: 10px;
+  font-size: .8rem;
+}
+
+.resource-holder{
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.resource-heading{
+  padding-top: 10px;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.resource-title{
+  color: tomato;
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+}
+
+.resource-type{
+  color: #777;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: .7rem;
+  font-weight: 100;
+}
+
+.resource-source{
+  font-family: 'Playfair Display', serif;
+  font-size: .9rem;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+
+.resource-explainer{
+  font-weight: 100;
+  font-size: 1rem;
+  color: #212121;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*page not found*/
+
+.pagenotfoundbg{
+  background-color: #fff;
+}
+
+.pagenotfound{
+  text-align: center;
+  width: 90%;
+  padding-top: 60px;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 820px){
+  header{
+    background-color: #fff;
+    height: auto;
+  }
+  
+  .card, .postcard{
+    width: 40%;
+  }
+  
+  .tags_filter_holder{
+    white-space: nowrap;
+    overflow: hidden;
+  }
+ 
+}
+
+@media screen and (max-width: 760px){
+  .theh1{
+     display: block;
+     width: 90%;
+     text-align: center;
+  }
+  
+  #input_and_button_holder{
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .top-nav-div{
+    display: block;
+    z-index: 25;
+    
+  }
+  
+   #menu-icon{
+    display: block;
+    width: 70%;
+    margin-bottom: 5%;
+   }
+  
+  nav{ 
+    /* width: 60%;
+    text-align: center;
+    padding-top: 34px;
+    margin-left: 20%; */
+
+  width: 20%;
+  right: 0;
+  text-align: center;
+  position: fixed;
+  display: none;
+  background-color: #fff;
+  }
+  
+  nav ul{
+    top: 180px;
+    position: fixed;
+    width: 70%;
+    left: 10.2%;
+    border-bottom: .5px solid tomato;
+    background-color: #fff;
+  }
+  
+  nav li{
+    display: block;
+    background-color: #fff;
+    line-height: 40px;
+    border-bottom: 2px solid #fff;
+    
+  }
+  
+  nav ul.show{
+    left: -100%;
+  }
+  
+  #tags_filter_holder{
+    margin-top: 40px;
+  }
+  
+  #holds-everything{
+    padding-top: 250px;
+  }
+  
+  /*responsive homepage styling*/
+  
+  .card, .postcard{
+    width: 60%;
+    margin-left: 17%;
+  }
+  /*end of responsive homepage styling*/
+  
+  /*dictionary page responsive*/
+  .container-for-side-letter-and-entry-count{
+    position: fixed;
+    top: 20%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    left: 0;
+  }
+
+  .side-letter p{
+    padding-top: 5px;
+    font-size: 6rem;
+    color: #212121;
+  }
+
+  .entry-count{
+    padding-left: 0;
+    color: #555;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .entry-progress{
+    display: block;
+    height: 1px;
+    background-color: tomato;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  section{
+      width: 100%;
+      margin-left: 0;
+    }
+
+
+    h4{
+      width:40%;
+      font-size: 1.3rem;
+    }
+
+  /*end of dictionary page responsive styling*/
+
+  /*resources styling responsive*/
+
+  .resource-holder{
+    width: 90%;
+    padding-top: 15px;
+  }
 }
