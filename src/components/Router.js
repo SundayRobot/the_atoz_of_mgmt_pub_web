@@ -18,7 +18,7 @@ const Router = () =>{
       <div>
         <NavLinks />
         <Switch>
-          <Route path="/" component={App} exact/>
+          <Route path="/the_atoz_of_mgmt_pub_web/" component={App} exact/>
           <Route  path="/thedictionary" component={DictionaryDetail}/>
           <Route  path="/theposts" component={PostsOverview}/>
           <Route  path="/thepostsdetailed/:id" component={PostDetail}/>
