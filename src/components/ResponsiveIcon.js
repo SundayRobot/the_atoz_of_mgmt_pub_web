@@ -46,9 +46,9 @@ class ResponsiveIcon extends React.Component{
         {!this.state.one && 
         <nav  id="thenav" class="thenav">
           <ul id="homepage-ul" style={thestyle}>
-            <li><NavLink to="/thedictionary">dictionary</NavLink></li>
-            <li><NavLink to="/theposts">posts</NavLink></li>
-            <li><NavLink to="/theresources">resources</NavLink></li>
+            <li><NavLink to="/the_atoz_of_mgmt_pub_web/thedictionary">dictionary</NavLink></li>
+            <li><NavLink to="/the_atoz_of_mgmt_pub_web/theposts">posts</NavLink></li>
+            <li><NavLink to="/the_atoz_of_mgmt_pub_web/theresources">resources</NavLink></li>
           </ul>
         </nav>
         }

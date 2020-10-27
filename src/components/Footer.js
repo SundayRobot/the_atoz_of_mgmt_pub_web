@@ -9,7 +9,7 @@ const Footer = ()=>{
         <p>&copy; 2020</p>
         <p id="footerh5">The A-Z of Managing a Publishing Website</p>
       </div>
-        <p id="thefooter"><Link to="/about">About</Link></p>
+        <p id="thefooter"><Link to="/the_atoz_of_mgmt_pub_web/about">About</Link></p>
     </footer>
   );
 };

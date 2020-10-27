@@ -51,7 +51,7 @@ class PostsDetail extends React.Component{
                       <div className="goback">
                         <img className="gobackbutton" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flowchart_arrow.svg" />
                         <p className="readmore goback">
-                          <Link to = "/theposts">go back</Link></p>
+                          <Link to = "/the_atoz_of_mgmt_pub_web/theposts">go back</Link></p>
                       </div>
                     </div>
                   )
@@ -66,31 +66,3 @@ class PostsDetail extends React.Component{
 };
 
 export default PostsDetail;
-
-/*
-
-
-<PostDetailHeader />
-        <div id="holds-everything">
-          <div id="holder">
-            <div className="postdetail">
-              {this.state.activePost.map(item=>{
-                return (
-                  <div>
-                      <h4 className="h4-post-detail">{item.postTitle}</h4>
-                      <p className="post-date">{item.postedDate}</p>
-                      <div className="testin123">
-                        mmmmmmmm
-                    <div className="readmoreholder">
-
-                    </div>
-                  </div>
-                  )
-                }
-              )}
-              </div>
-            </div>
-          </div>
-        </div>
-       <Footer />
- */

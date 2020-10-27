@@ -57,7 +57,7 @@ handleFilter = (e)=>{
                   <p className="post-word">{post.postIntroText.substring(0,30)+'...'}</p>
                   <div className="readmoreholder">
                     <p className="readmore">
-                      <Link to={{ pathname: `/thepostsdetailed/${post.postTitle}`,
+                      <Link to={{ pathname: `/the_atoz_of_mgmt_pub_web/thepostsdetailed/${post.postTitle}`,
                         state: {post: post.postTitle}
                         }}>read more</Link>
                     </p>
@@ -76,7 +76,7 @@ handleFilter = (e)=>{
                   <p className="post-word">{post.postIntroText.substring(0,60)+'...'}</p>
                   <div className="readmoreholder">
                     <p className="readmore">
-                    <Link to={{ pathname: `/thepostsdetailed/${post.postTitle}`,
+                    <Link to={{ pathname: `/the_atoz_of_mgmt_pub_web/thepostsdetailed/${post.postTitle}`,
                         state: {post: post.postTitle}
                         }}>read more</Link>
                     </p>

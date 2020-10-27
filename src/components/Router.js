@@ -19,11 +19,11 @@ const Router = () =>{
         <NavLinks />
         <Switch>
           <Route path="/the_atoz_of_mgmt_pub_web/" component={App} exact/>
-          <Route  path="/thedictionary" component={DictionaryDetail}/>
-          <Route  path="/theposts" component={PostsOverview}/>
-          <Route  path="/thepostsdetailed/:id" component={PostDetail}/>
-          <Route  path="/theresources" component={Resources}/>
-          <Route  path="/about" component={About}/>
+          <Route  path="/the_atoz_of_mgmt_pub_web/thedictionary" component={DictionaryDetail}/>
+          <Route  path="/the_atoz_of_mgmt_pub_web/theposts" component={PostsOverview}/>
+          <Route  path="/the_atoz_of_mgmt_pub_web/thepostsdetailed/:id" component={PostDetail}/>
+          <Route  path="/the_atoz_of_mgmt_pub_web/theresources" component={Resources}/>
+          <Route  path="/the_atoz_of_mgmt_pub_web/about" component={About}/>
           <Route  path="/" component={PageNotFound}/>
         </Switch>
       </div>

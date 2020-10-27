@@ -12,9 +12,9 @@ const Navlinks = (props)=>{
     {!props.stopdisplay &&
     <nav >
          <ul id="homepage-ul" className="animate__animated animate__slideInRight">
-          <li><NavLink to="/thedictionary">dictionary</NavLink></li>
-          <li><NavLink to="/theposts">posts</NavLink></li>
-          <li><NavLink to="/theresources">resources</NavLink></li>
+          <li><NavLink to="/the_atoz_of_mgmt_pub_web/thedictionary">dictionary</NavLink></li>
+          <li><NavLink to="/the_atoz_of_mgmt_pub_web/theposts">posts</NavLink></li>
+          <li><NavLink to="/the_atoz_of_mgmt_pub_web/theresources">resources</NavLink></li>
         </ul>
       </nav>
     }

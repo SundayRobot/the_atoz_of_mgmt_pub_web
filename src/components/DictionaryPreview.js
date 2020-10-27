@@ -10,7 +10,7 @@ const DictionaryPreview = (props)=>{
       <p className="dictionary-word">{props.word}</p>
       <div className="readmoreholder">
       <p className = "readmore">
-        <Link to={{pathname:`/thedictionary`}}>
+        <Link to={{pathname:`/the_atoz_of_mgmt_pub_web/thedictionary`}}>
         read more</Link>
       </p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flowchart_arrow.svg" alt="arrow"/>

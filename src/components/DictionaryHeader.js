@@ -9,7 +9,7 @@ const DictionaryHeader = ()=>{
   return (
     <header>
       <div id="items_inside_header_holder">
-        <h1 className="theh1 animate__slideInDown"><Link to="/">The A-Z of Managing a Publishing Website</Link></h1>
+        <h1 className="theh1 animate__slideInDown"><Link to="/the_atoz_of_mgmt_pub_web/">The A-Z of Managing a Publishing Website</Link></h1>
           <div id="input_and_button_holder">
             <input />
             <button id="search">search</button>
