@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/the_atoz_of_mgmt_pub_web/static/css/main.2750603d.chunk.css",
+    "main.js": "/the_atoz_of_mgmt_pub_web/static/js/main.a2978a8d.chunk.js",
+    "main.js.map": "/the_atoz_of_mgmt_pub_web/static/js/main.a2978a8d.chunk.js.map",
+    "runtime-main.js": "/the_atoz_of_mgmt_pub_web/static/js/runtime-main.1fab98f8.js",
+    "runtime-main.js.map": "/the_atoz_of_mgmt_pub_web/static/js/runtime-main.1fab98f8.js.map",
+    "static/css/2.a1596f27.chunk.css": "/the_atoz_of_mgmt_pub_web/static/css/2.a1596f27.chunk.css",
+    "static/js/2.032428bb.chunk.js": "/the_atoz_of_mgmt_pub_web/static/js/2.032428bb.chunk.js",
+    "static/js/2.032428bb.chunk.js.map": "/the_atoz_of_mgmt_pub_web/static/js/2.032428bb.chunk.js.map",
+    "index.html": "/the_atoz_of_mgmt_pub_web/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/the_atoz_of_mgmt_pub_web/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.2750603d.chunk.css.map": "/the_atoz_of_mgmt_pub_web/static/css/main.2750603d.chunk.css.map",
+    "static/js/2.032428bb.chunk.js.LICENSE.txt": "/the_atoz_of_mgmt_pub_web/static/js/2.032428bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fab98f8.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.032428bb.chunk.js",
+    "static/css/main.2750603d.chunk.css",
+    "static/js/main.a2978a8d.chunk.js"
+  ]
+}
